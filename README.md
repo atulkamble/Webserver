@@ -2,12 +2,13 @@
 Basic EC2 Webserver Script. Apache Server | EC2 Advanced | Terraform Script.
 
 // Webserver | Configuration
-
+```
 EC2 | amazon-linux-2023 | t2 micro
 Security Group: http:80 , https:443, ssh:22
 ssh >> update instance, httpd, /var/www/html/index.html
 <h1> This is webserver </h1>
 public ip
+```
 
 // Commands after ssh
 
