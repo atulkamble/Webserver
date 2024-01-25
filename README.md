@@ -57,8 +57,8 @@ public ip
 ```
 sudo yum update -y
 sudo yum install httpd -y
-sudo systemctl start httpd
 sudo systemctl enable httpd
+sudo systemctl start httpd
 sudo usermod -a -G apache ec2-user
 sudo chmod 777 /var/www/html
 cd /var/www/html
