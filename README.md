@@ -1,4 +1,46 @@
-# Webserver
+# Webserver Nginx
+# nginx on EC2
+```
+// updating a ec2 instanceb
+sudo yum update -y
+
+// install nginx server on ec2 
+sudo yum install nginx -y
+
+// check for nginx version
+sudo nginx -v
+
+// start nginx
+sudo nginx
+```
+
+
+# Install and Run Nginx with Docker on EC2
+```
+// install docker
+sudo yum install docker
+
+// check docker version
+docker --version
+
+// start docker engine
+sudo systemctl start docker
+
+// pull docker image 
+sudo docker pull nginx:latest 
+
+// list docker images
+sudo docker images
+
+// run nginx docker image 
+sudo docker run -p 80:80 nginx:latest
+   
+// Check web-browser for nginx server
+
+http://public-ip-of-ec2-instance
+```
+
+# Webserver Apache
 Basic EC2 Webserver Script. Apache Server | EC2 Advanced | Terraform Script.
 
 // Webserver | Configuration
