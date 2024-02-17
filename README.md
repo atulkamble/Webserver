@@ -97,7 +97,7 @@ sudo touch index.html
 nano --version
 nano index.html
 ```
-// Copy following code to inde.html
+// Copy following code to index.html
 ```
 <!DOCTYPE html>
 <html>
