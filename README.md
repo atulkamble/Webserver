@@ -83,6 +83,38 @@ cd /var/www/html
 echo "<h1>hello from $(hostname -f) webserver</h1>">/var/www/html/index.html
 ```
 
+// Deploy Webserver on Azure VM
+// Task: Configuration of Webserver on Ubuntu Server 2022
+```
+sudo apt update -y
+sudo apt install apache2
+sudo apt install mini-httpd -y
+sudo systemctl start mini-httpd
+sudo systemctl enable mini-httpd
+sudo chmod 777 /var/www/html
+cd /var/www/html
+sudo touch index.html
+nano --version
+nano index.html
+```
+// Copy following code to inde.html
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>This is Webserver.</h1>
+<p>Hello from Microsoft Azure VM</p>
+
+</body>
+</html>
+```
+
+Check public-ip of machine
+```
+http://vm-public-ip/index.html
+```
+
 // Launch website from git to EC2 directly via terraform
 ```
 sudo yum update -y
