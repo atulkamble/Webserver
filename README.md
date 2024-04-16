@@ -12,6 +12,13 @@ sudo nginx -v
 
 // start nginx
 sudo nginx
+
+sudo systemctl enable nginx
+
+sudo systemctl start nginx
+
+sudo systemctl status nginx
+
 ```
 
 
