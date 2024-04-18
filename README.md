@@ -111,7 +111,7 @@ nano index.html
 <body>
 
 <h1>This is Webserver.</h1>
-<p>Hello from Microsoft Azure VM</p>
+<p> Hello form EC2 </p>
 
 </body>
 </html>
