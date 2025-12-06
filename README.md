@@ -79,15 +79,17 @@ Paste following Code to
 EC2 - Advanced Details - user data
 
 ```
- #!/bin/bash
+#!/bin/bash
 yum update -y
 yum install httpd -y
 systemctl start httpd
 systemctl enable httpd
+if ! getent group apache >/dev/null; then
+    groupadd apache
+fi
 usermod -aG apache ec2-user
 chmod 755 /var/www/html
-cd /var/www/html
-echo "<h1>hello from $(hostname -f) webserver</h1>">/var/www/html/index.html
+echo "<h1>Hello from $(hostname -f) webserver</h1>" > /var/www/html/index.html
 ```
 
 // Deploy Webserver on Azure VM
